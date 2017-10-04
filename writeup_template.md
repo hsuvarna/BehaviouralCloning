@@ -97,5 +97,6 @@ Final model architecture is Lenet architecture.
 ####3. Creation of the Training Set & Training Process
 
 * Training data: I used from the Project resources
+* Preprocessed the images tobe with in -0.5 to 0.5.
 
 
