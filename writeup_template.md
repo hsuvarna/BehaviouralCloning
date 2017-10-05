@@ -92,7 +92,10 @@ Tried countless times to stratighten the car on the road.
 
 ####2. Final Model Architecture
 
-Final model architecture is Lenet architecture.
+Final model architecture is Lenet architecture. Used RELU as activation function. Per https://stats.stackexchange.com/questions/218752/relu-vs-sigmoid-vs-softmax-as-hidden-layer-neurons
+The Relu functions better for neural nets with fast convergence.
+
+Max pooling is used for reducing overfitting.
 
 ####3. Creation of the Training Set & Training Process
 
