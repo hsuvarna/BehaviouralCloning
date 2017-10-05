@@ -16,13 +16,12 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/placeholder.png "Model Visualization"
-[image2]: ./examples/placeholder.png "Grayscaling"
-[image3]: ./examples/placeholder_small.png "Recovery Image"
-[image4]: ./examples/placeholder_small.png "Recovery Image"
-[image5]: ./examples/placeholder_small.png "Recovery Image"
-[image6]: ./examples/placeholder_small.png "Normal Image"
-[image7]: ./examples/placeholder_small.png "Flipped Image"
+[image1]: ./examples/img5000.jpg  "Normal training image"
+[image2]: ./examples/cropped_img5000.jpg "Cropped training image. Borders blacked"
+[image3]: ./examples/flipped_img5000.jpg "Flipped training image"
+[image4]: ./examples/img7000.jpg  "Normal training image"
+[image5]: ./examples/cropped_img7000.jpg "Cropped training image. Borders blacked"
+[image6]: ./examples/flipped_img7000.jpg "Flipped training image"
 
 ## Rubric Points
 
@@ -73,7 +72,7 @@ Other than this parameter, I did not try any other parameter.
 
 Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving, recovering from the left and right sides of the road using correction factor of 0.25. The flipped images also helped here. In addition, cropping the images reduced the effects of mountains, sky and water in images.
 
-I used the sample project training data. I filtered out zero steering angle images if more than 5 in sequentially.
+I used the sample project training data ![alt text][image1] ![alt text][image4]. I filtered out zero steering angle images if more than 5 in sequentially.
 
 
 ###Model Architecture and Training Strategy
@@ -87,7 +86,8 @@ Tried countless times to stratighten the car on the road.
 * Tried correction factor of 0.2 to 0.33 with 0.2 intervals.
 * added extra dropout layers but did nt help.
 * Used 3 cameras.
-* Used flipped images
+* Used flipped images ![alt text][image3] 
+![alt text][image6] 
 * Augmented extra images
 
 ####2. Final Model Architecture
